@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>URL Shortener</h1>
+
+    <p class="subtitle">
+        Shorten long URLs instantly
+    </p>
+
+    <input
+            type="text"
+            id="longUrl"
+            placeholder="Paste your long URL here..."
+    >
+
+    <button
+            class="shorten-btn"
+            onclick="shortenUrl()"
+    >
+        Shorten URL
+    </button>
+
+    <div class="result-box">
+
+        <h3>Your Short URL</h3>
+
+        <p id="shortUrl">
+            Your shortened link appears here
+        </p>
+
+        <button
+                class="copy-btn"
+                onclick="copyUrl()"
+        >
+            Copy
+        </button>
+
+    </div>
+
+</div>
+
+<script src="/script.js"></script>
+
+</body>
+</html>
